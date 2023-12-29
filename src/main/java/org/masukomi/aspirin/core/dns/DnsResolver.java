@@ -3,7 +3,7 @@ package org.masukomi.aspirin.core.dns;
 import java.util.Arrays;
 import java.util.Collection;
 import java.util.Comparator;
-import java.util.Vector;
+import java.util.ArrayList;
 
 import javax.mail.URLName;
 
@@ -48,7 +48,7 @@ public class DnsResolver {
 	
 	public static Collection<URLName> getMXRecordsForHost(String hostName) {
 
-		Vector<URLName> recordsColl = null;
+		ArrayList<URLName> recordsColl = null;
 		try {
 			boolean foundOriginalMX = true;
 			Record[] records = new Lookup(hostName, Type.MX).run();
@@ -86,7 +86,7 @@ public class DnsResolver {
                     }
                 });
                 // Create records collection
-                recordsColl = new Vector<URLName>(records.length);
+                recordsColl = new ArrayList<URLName>(records.length);
                 for (int i = 0; i < records.length; i++)
 				{ 
 					MXRecord mx = (MXRecord) records[i];
@@ -100,7 +100,7 @@ public class DnsResolver {
             }else
             {
             	foundOriginalMX = false;
-            	recordsColl = new Vector<URLName>();
+            	recordsColl = new ArrayList<URLName>();
             }
             
             /*
