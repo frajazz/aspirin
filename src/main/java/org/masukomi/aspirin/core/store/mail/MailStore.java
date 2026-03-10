@@ -1,8 +1,7 @@
 package org.masukomi.aspirin.core.store.mail;
 
+import jakarta.mail.internet.MimeMessage;
 import java.util.List;
-
-import javax.mail.internet.MimeMessage;
 
 /**
  * This store contain all MimeMessage instances. This is useful, 

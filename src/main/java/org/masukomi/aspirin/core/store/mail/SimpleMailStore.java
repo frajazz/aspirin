@@ -1,10 +1,10 @@
 package org.masukomi.aspirin.core.store.mail;
 
+import jakarta.mail.internet.MimeMessage;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import javax.mail.internet.MimeMessage;
 
 
 

@@ -1,5 +1,8 @@
 package org.masukomi.aspirin.core.store.mail;
 
+import jakarta.mail.MessagingException;
+import jakarta.mail.Session;
+import jakarta.mail.internet.MimeMessage;
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
@@ -12,9 +15,6 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-import javax.mail.MessagingException;
-import javax.mail.Session;
-import javax.mail.internet.MimeMessage;
 
 import org.masukomi.aspirin.core.AspirinInternal;
 
